@@ -1,0 +1,111 @@
+{
+    "type": "Ext.menu.Menu",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homemaintainancecontextmenu",
+        "designer|userClassName": "home.maintainance.ContextMenu",
+        "width": 120
+    },
+    "name": "home.device.ContextMenu1",
+    "designerId": "902c64f2-2ecd-4878-a100-253b44ba86e2",
+    "viewControllerInstanceId": "025ce336-aba7-4c02-9983-4da2a3766f35",
+    "viewModelInstanceId": "90107aec-8a53-4a81-af51-0dd7e155c134",
+    "cn": [
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "icon": "./resources/icons/left16.png",
+                "itemId": "renewItem",
+                "text": "恢复"
+            },
+            "name": "MyMenuItem6",
+            "designerId": "8ee33a01-1a9a-4e66-acad-aa0130c203d0",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item",
+                            "e"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var grid = item.parentMenu.grid; //console.dir(grid);",
+                            "var selMod = grid.getSelectionModel();",
+                            "if (selMod.getCount()===1) {",
+                            "    var record = selMod.getSelection()[0];",
+                            "    Ext.Ajax.request({",
+                            "        url: './resources/data/success.json',",
+                            "        params: { id: record.data.id, option: 'renew' },",
+                            "        success: function(response){",
+                            "            var text = response.responseText;",
+                            "            var obj = Ext.decode(text);",
+                            "            grid.getStore().load();",
+                            "        }",
+                            "    });",
+                            "} else {",
+                            "    Ext.Msg.alert('错误', '请选择一条记录进行操作！');",
+                            "}"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "46bbcf2c-2cab-4a6a-a0f6-c53c0ffc8ce8"
+                }
+            ]
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "nullItem",
+                "text": "无"
+            },
+            "name": "MyMenuItem3",
+            "designerId": "325d8a06-9705-4273-8285-da3b1d52a5ae"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "checkStatus",
+                "implHandler": [
+                    "var me = this;",
+                    "if (record.data.deviceStatus===-1) {",
+                    "    me.down('#renewItem').show();",
+                    "    me.down('#nullItem').hide();",
+                    "} else {",
+                    "    me.down('#renewItem').hide();",
+                    "    me.down('#nullItem').show();",
+                    "}"
+                ]
+            },
+            "name": "checkStatus",
+            "designerId": "f60f8ab7-7ec2-4747-a887-1477adbf25b6"
+        }
+    ]
+}

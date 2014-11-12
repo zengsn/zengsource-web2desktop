@@ -1,0 +1,33 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "models": [
+            "Room",
+            "Division",
+            "Location",
+            "Category",
+            "Device",
+            "Repair",
+            "User"
+        ],
+        "stores": [
+            "DeviceTree",
+            "Repairs"
+        ],
+        "views": [
+            "MainViewport",
+            "Main",
+            "login.Panel",
+            "home.Panel",
+            "home.device.ContextMenu"
+        ]
+    },
+    "name": "MyController",
+    "designerId": "929dffde-b3ff-4afb-b6b8-3f3a323c8552"
+}

@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homeusereditwindow",
+        "designer|userClassName": "home.device.EditWindowViewModel1"
+    },
+    "name": "home.device.EditWindowViewModel1",
+    "designerId": "cd237ba7-11bc-43f6-a958-79ff76026ddc"
+}

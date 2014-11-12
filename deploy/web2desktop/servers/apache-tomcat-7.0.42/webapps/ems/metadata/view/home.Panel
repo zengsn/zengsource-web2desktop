@@ -1,0 +1,68 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homepanel",
+        "designer|userClassName": "home.Panel",
+        "itemId": "card-home",
+        "layout": "border",
+        "title": null
+    },
+    "name": "MyPanel1",
+    "designerId": "d7728715-80c7-4e1c-8399-87af8fa57b34",
+    "viewControllerInstanceId": "f061f38c-e7da-4c1e-9cc4-06fad387e508",
+    "viewModelInstanceId": "1a75d2de-0958-4228-82b7-e853d428ee55",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "logopanel",
+                "layout|region": "north",
+                "layout|split": null
+            },
+            "name": "home.logopanel",
+            "designerId": "1ee5a35e-5bc6-451b-95d9-5833563c1e33",
+            "masterInstanceId": "be0cfeb7-aaab-4e20-ae49-bf3375fb470e"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "layout|split": true,
+                "width": 265
+            },
+            "name": "home.device.panel",
+            "designerId": "a86cd541-b545-4bfe-867f-d8f1940d37f9",
+            "masterInstanceId": "65d30463-9554-4250-b3c1-9cad18c5969b"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "mantainpanel",
+                "layout|region": "center"
+            },
+            "name": "home.maintainance.tabpanel",
+            "designerId": "847741da-da5c-461d-9594-a718633ead99",
+            "masterInstanceId": "2d215ab9-abad-4642-806d-7522ca756a5f"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+java -jar web2desktop.jar

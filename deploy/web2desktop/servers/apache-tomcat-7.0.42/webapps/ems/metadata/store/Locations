@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Locations",
+        "model": "Location",
+        "storeId": "Locations"
+    },
+    "name": "Repairs1",
+    "designerId": "e1a26001-e0f3-4c92-ab34-1cc762254f90",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "./resources/data/locations.json"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "78cb2052-1d7f-4381-b825-7d361a31178e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "locations"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "c844d669-399c-4c98-8d93-c4597a2ef5c6"
+                }
+            ]
+        }
+    ]
+}

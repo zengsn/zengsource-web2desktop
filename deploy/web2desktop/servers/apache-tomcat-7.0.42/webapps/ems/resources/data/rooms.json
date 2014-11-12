@@ -1,0 +1,19 @@
+{
+	"success": true,
+	"rooms": [{
+		"id": 1,
+		"name": "11房",
+		"locationId": 1,
+		"locationName": "手术一区"	
+	}, {
+		"id": 2,
+		"name": "12房",
+		"locationId": 2,
+		"locationName": "手术二区"	
+	}, {
+		"id": 3,
+		"name": "13房",
+		"locationId": 3,
+		"locationName": "手术三区"	
+	}]
+}

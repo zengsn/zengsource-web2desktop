@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "settingpanel",
+        "designer|userClassName": "setting.PanelViewModel"
+    },
+    "designerId": "65129679-8767-4e86-99c7-003cad4e9657"
+}

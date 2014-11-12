@@ -1,0 +1,238 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homelogopanel",
+        "designer|userClassName": "home.LogoPanel",
+        "height": 45,
+        "itemId": null,
+        "layout": "fit",
+        "title": null
+    },
+    "name": "MyPanel3",
+    "designerId": "be0cfeb7-aaab-4e20-ae49-bf3375fb470e",
+    "viewControllerInstanceId": "72c55d68-41bd-4f13-9e6e-01acec76d7dd",
+    "viewModelInstanceId": "c2adb4dd-3f1d-4af9-bf5a-175f41e4c8c1",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": null,
+                "style": [
+                    "\"background: url(./resources/images/bg.jpg)\""
+                ]
+            },
+            "name": "MyToolbar1",
+            "designerId": "14c1332f-a72d-4670-9cc3-1900426eb83a",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.TextItem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "style": [
+                            "\"color:#fff;font-size:16px;\""
+                        ],
+                        "text": "设备管理"
+                    },
+                    "name": "MyTextItem1",
+                    "designerId": "be3e06a8-0f90-4629-bbdf-c98b58c99527"
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MyFill",
+                    "designerId": "ae1569a2-50c4-435d-aff7-f5bc94a04330"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "./resources/icons/home24.png",
+                        "itemId": "homeBtn",
+                        "layout|flex": null,
+                        "scale": "medium",
+                        "text": null
+                    },
+                    "name": "MyButton14",
+                    "designerId": "3800bb55-c989-468a-aa3c-f3b41548b852",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var main = button.up('main');",
+                                    "main.getLayout().setActiveItem('card-home');"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "75fc32de-3d69-419b-9d15-48a52ef48557"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "./resources/icons/woman24.png",
+                        "itemId": "userBtn",
+                        "layout|flex": null,
+                        "scale": "medium",
+                        "text": null
+                    },
+                    "name": "MyButton1",
+                    "designerId": "5bbf2c88-d2f6-4851-9469-00cc50504609",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var logo = button.up('homelogopanel');",
+                                    "if (!logo.userEditWin) {",
+                                    "    logo.userEditWin = Ext.create('widget.homeusereditwindow');",
+                                    "}",
+                                    "logo.userEditWin.show(button);"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "162c8948-5eb1-4b76-8c6b-617541410c43"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "./resources/icons/gear24.png",
+                        "itemId": "settingBtn",
+                        "layout|flex": null,
+                        "scale": "medium",
+                        "text": null
+                    },
+                    "name": "MyButton2",
+                    "designerId": "4f00c13c-7430-4e2f-87d1-739fe0838658",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var main = button.up('main');",
+                                    "main.getLayout().setActiveItem('card-setting');"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "321a7066-f884-4b39-becf-f834a0973bc6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "./resources/icons/power24.png",
+                        "itemId": "logoutBtn",
+                        "layout|flex": null,
+                        "scale": "medium",
+                        "text": null
+                    },
+                    "name": "MyButton13",
+                    "designerId": "6233c8c5-b139-47e5-837c-220dee98f313",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var main = button.up('main');",
+                                    "Ext.Msg.confirm('确认', '确定要退出当前登录吗？', function(btnId, text, opt) {",
+                                    "    if ('yes'==btnId) {",
+                                    "        // TODO ",
+                                    "        main.getLayout().setActiveItem('card-login');",
+                                    "    }",
+                                    "});"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "71018252-6ba8-4d95-91bb-faa5c291adc3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

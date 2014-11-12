@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homemaintainancecontextmenu",
+        "designer|userClassName": "home.device.ContextMenuViewModel1"
+    },
+    "name": "home.device.ContextMenuViewModel1",
+    "designerId": "90107aec-8a53-4a81-af51-0dd7e155c134"
+}

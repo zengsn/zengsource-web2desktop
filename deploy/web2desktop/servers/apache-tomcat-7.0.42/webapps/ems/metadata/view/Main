@@ -1,0 +1,94 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "main",
+        "designer|userClassName": "Main",
+        "layout": "card",
+        "title": null
+    },
+    "name": "MyPanel1",
+    "designerId": "3c53f51e-8279-460e-abdd-d40ac036f4f2",
+    "viewControllerInstanceId": "3c15bf66-fe40-4191-af5e-f686c30729f6",
+    "viewModelInstanceId": "7e4272ac-1475-4b56-81e2-cd5c97f29d13",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "card-login"
+            },
+            "name": "login.panel",
+            "designerId": "4a0900ea-65df-46ef-aaa0-3e013e766a0b",
+            "masterInstanceId": "ed29dbba-d65c-4878-879c-aaf52975b62b"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "header": null
+            },
+            "name": "home.panel",
+            "designerId": "ffe5b41c-4ed8-4fa5-82dd-1a98e501ee39",
+            "masterInstanceId": "d7728715-80c7-4e1c-8399-87af8fa57b34"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "setting.panel",
+            "designerId": "e1e939bf-2a79-4a57-a87c-dd94e45918a7",
+            "masterInstanceId": "193dc501-5012-4c6c-aa91-a0481fa30e72"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "style": [
+                    "\"background: url(./resources/images/bg.jpg);\""
+                ]
+            },
+            "name": "MyToolbar",
+            "designerId": "d83a711c-8cb0-4d32-875b-8b9c60d5e31b",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.TextItem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "style": [
+                            "\"color:#fff;\""
+                        ],
+                        "text": "&copy; 2014 广州中山大学附属第一医院"
+                    },
+                    "name": "MyTextItem",
+                    "designerId": "9416a915-40b5-4d48-a9cd-2ac2d6ae57b2"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Divisions",
+        "model": "Division",
+        "storeId": "Divisions"
+    },
+    "name": "Rooms1",
+    "designerId": "ffd09ec6-e562-471f-a8bb-53263b3477a4",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "./resources/data/divisions.json"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "03b74c2d-21d5-409b-988f-47dd0467d4c0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "divisions"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "ca86f0d8-fb2b-4bfd-a694-88ba2cce3df4"
+                }
+            ]
+        }
+    ]
+}

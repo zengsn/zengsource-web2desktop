@@ -1,0 +1,588 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closeAction": "hide",
+        "designer|userAlias": "homedeviceeditwindow",
+        "designer|userClassName": "home.device.EditWindow",
+        "height": null,
+        "layout": "fit",
+        "modal": true,
+        "title": "编辑",
+        "width": 400
+    },
+    "name": "MyWindow",
+    "designerId": "418783a2-133b-46e9-bb02-e797e1deb681",
+    "viewControllerInstanceId": "590c76da-0189-4ec2-9d70-fd782949dbcd",
+    "viewModelInstanceId": "c8b4063e-7618-4f00-a85c-c1408ac12037",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "itemId": "editform",
+                "title": null
+            },
+            "name": "MyForm1",
+            "designerId": "b764c1b6-3423-4bb5-b53f-3d7063a33a63",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Hidden",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "layout|anchor": "100%",
+                        "name": "id"
+                    },
+                    "name": "MyHiddenField",
+                    "designerId": "261c705b-8047-4d97-80aa-3ef88720cd75"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "数据类型",
+                        "itemId": "datatypes"
+                    },
+                    "name": "MyRadioGroup2",
+                    "designerId": "4d9fbcc1-7ca6-4d7d-a8e0-e08cf4d7f947",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "设备",
+                                "checked": true,
+                                "fieldLabel": null,
+                                "inputValue": "device",
+                                "name": "type"
+                            },
+                            "name": "MyRadio2",
+                            "designerId": "ab229978-70ba-4651-9080-a4f03499e250"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "存放区",
+                                "fieldLabel": null,
+                                "inputValue": "location",
+                                "name": "type"
+                            },
+                            "name": "MyRadio5",
+                            "designerId": "84d5ed32-f8c2-4ad5-b7e5-ebc9815b4353"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "房间",
+                                "fieldLabel": null,
+                                "inputValue": "room",
+                                "name": "type"
+                            },
+                            "name": "MyRadio3",
+                            "designerId": "adf5ebf2-9df3-4d01-9382-c18d4bee7b64"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "科室",
+                                "fieldLabel": null,
+                                "inputValue": "division",
+                                "name": "type"
+                            },
+                            "name": "MyRadio4",
+                            "designerId": "4249f4c0-e392-4f71-97d0-799f2aeebf3c"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDataTypeChange",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var fp = me.down('form');",
+                                    "var type = newValue.type;",
+                                    "if ('device'==type) {",
+                                    "    fp.getForm().findField('name').show();",
+                                    "    fp.getForm().findField('code').show();",
+                                    "    var catGrp = fp.down('#devicecategory');",
+                                    "    catGrp.show();",
+                                    "    if ('fix'==catGrp.getValue().category) {",
+                                    "        fp.down('#place').show();",
+                                    "        //fp.getForm().findField('locationId').show();",
+                                    "        fp.getForm().findField('roomId').show();",
+                                    "        fp.getForm().findField('divisionId').hide();",
+                                    "    } else if ('special'==catGrp.getValue().category) {",
+                                    "        fp.down('#place').hide();",
+                                    "        fp.getForm().findField('divisionId').show();",
+                                    "    }",
+                                    "} else if ('location'==type) {",
+                                    "    fp.getForm().findField('name').show();",
+                                    "    fp.getForm().findField('code').hide();",
+                                    "    fp.down('#devicecategory').hide();",
+                                    "    fp.down('#place').hide();",
+                                    "    fp.getForm().findField('divisionId').hide();",
+                                    "} else if ('room'==type) {",
+                                    "    fp.getForm().findField('name').show();",
+                                    "    fp.getForm().findField('code').hide();",
+                                    "    fp.down('#devicecategory').hide();",
+                                    "    fp.down('#place').show();",
+                                    "    //fp.getForm().findField('locationId').show();",
+                                    "    fp.getForm().findField('roomId').hide();",
+                                    "    fp.getForm().findField('divisionId').hide();",
+                                    "} else if ('division'==type) {",
+                                    "    fp.getForm().findField('name').show();",
+                                    "    fp.getForm().findField('code').hide();",
+                                    "    fp.down('#devicecategory').hide();",
+                                    "    fp.down('#place').hide();",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onDataTypeChange",
+                            "designerId": "ac79a24b-9ed7-474b-a4ca-b460b2d78ed6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "设备ID",
+                        "layout|anchor": "100%",
+                        "name": "code"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "0bcdc111-adda-430c-8bf5-8f46fb2a1374"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "设备名",
+                        "layout|anchor": "100%",
+                        "name": "name"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "5752b312-f421-4c96-9024-70a2e5c1b80b"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "设备类型",
+                        "itemId": "devicecategory"
+                    },
+                    "name": "MyRadioGroup1",
+                    "designerId": "2a6a13a6-19fb-44cd-8b73-6e179b694d83",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "固定设备",
+                                "checked": true,
+                                "fieldLabel": null,
+                                "inputValue": "fix",
+                                "name": "category"
+                            },
+                            "name": "MyRadio2",
+                            "designerId": "033b2bb7-402c-456b-ad4e-51ad093d4191"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "特殊设备",
+                                "fieldLabel": null,
+                                "inputValue": "special",
+                                "name": "category"
+                            },
+                            "name": "MyRadio3",
+                            "designerId": "2139b8b7-e8f8-4095-ae14-869b32a6d739"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDevicecategoryChange",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "var fp = me.down('form');",
+                                    "var category = newValue.category;",
+                                    "if ('fix' == category) {",
+                                    "    fp.down('#place').show();",
+                                    "    fp.getForm().findField('roomId').show();",
+                                    "    fp.getForm().findField('divisionId').hide();",
+                                    "} else if ('special' == category) {",
+                                    "    fp.down('#place').hide();",
+                                    "    fp.getForm().findField('divisionId').show();",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onDevicecategoryChange",
+                            "designerId": "7c0f24f7-b0a5-405d-ae6d-554d6e5e83c5"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.FieldContainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "fieldLabel": "存放地",
+                        "height": null,
+                        "itemId": "place",
+                        "layout": "hbox"
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "ea0fbd33-0324-4015-b1f4-ee4cdfc6298e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": "name",
+                                "fieldLabel": null,
+                                "layout|flex": 2,
+                                "layout|margins": null,
+                                "margin": null,
+                                "name": "locationId",
+                                "store": "Locations",
+                                "valueField": "id"
+                            },
+                            "name": "MyComboBox3",
+                            "designerId": "42a8a24f-17ac-47e7-ba9b-939f3c21e4a9"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": "name",
+                                "fieldLabel": null,
+                                "layout|flex": 1,
+                                "margin": "0 0 0 10",
+                                "name": "roomId",
+                                "store": "Rooms",
+                                "valueField": "id"
+                            },
+                            "name": "MyComboBox2",
+                            "designerId": "b6b1e17a-2fbf-466c-8b55-a66e57e322b0"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "name",
+                        "fieldLabel": "科室",
+                        "hidden": true,
+                        "layout|anchor": "100%",
+                        "name": "divisionId",
+                        "store": "Divisions",
+                        "valueField": "id"
+                    },
+                    "name": "MyComboBox1",
+                    "designerId": "3ad0dba4-ce7d-4ba6-b2f5-b0cfbf4cbcdb",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDivisionIdComboChange",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "if (newValue && field.getStore().getCount()===0) {",
+                                    "    field.getStore().load({",
+                                    "        callback: function(records, opt, success) {",
+                                    "            if (success && records.length>0) {",
+                                    "                field.select(newValue);",
+                                    "            }",
+                                    "        }",
+                                    "    });",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onDivisionIdComboChange",
+                            "designerId": "52fc4440-7f2e-42c3-85cf-a7f7ce377ca2"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "height": null,
+                        "itemId": "buttons",
+                        "layout": "hbox"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "c8b67880-c725-45e1-9884-dff680841430",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "61922783-fcf5-4cfa-b892-90565e719cf0"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "保存",
+                                "width": 100
+                            },
+                            "name": "MyButton11",
+                            "designerId": "a05c8da8-6013-46fe-ac45-c64927957dda",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var fp = button.up('form');",
+                                            "var type = fp.down('#datatypes').getValue().type;",
+                                            "fp.getForm().submit({",
+                                            "    clientValidation: true,",
+                                            "    url: './resources/data/success.json',",
+                                            "    params: {},",
+                                            "    success: function(form, action) {",
+                                            "       Ext.Msg.alert('成功', action.result.msg);",
+                                            "    },",
+                                            "    failure: function(form, action) {",
+                                            "        switch (action.failureType) {",
+                                            "            case Ext.form.action.Action.CLIENT_INVALID:",
+                                            "                Ext.Msg.alert('失败', '请正确填写表单内容！');",
+                                            "                break;",
+                                            "            case Ext.form.action.Action.CONNECT_FAILURE:",
+                                            "                Ext.Msg.alert('失败', '通信错误！');",
+                                            "                break;",
+                                            "            case Ext.form.action.Action.SERVER_INVALID:",
+                                            "               Ext.Msg.alert('失败', action.result.msg);",
+                                            "       }",
+                                            "    }",
+                                            "});"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "818161c9-9661-46f8-b11e-2086b64e98e5"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|margins": null,
+                                "margin": "0 0 0 10",
+                                "text": "取消"
+                            },
+                            "name": "MyButton12",
+                            "designerId": "aee6d5be-30f8-4681-905a-c8318e57ab38",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "61279c9b-440b-4042-b4e5-9c0425c8d176"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "dataId"
+                ],
+                "fn": "loadData",
+                "implHandler": [
+                    "var me = this;",
+                    "var fp = me.down('form');",
+                    "var type = 'device';",
+                    "if (dataId.indexOf('location-')>-1) {",
+                    "    type = 'location';",
+                    "} else if (dataId.indexOf('room-')>-1) {",
+                    "    type = 'room';",
+                    "} else if (dataId.indexOf('division-')>-1) {",
+                    "    type = 'division';",
+                    "}",
+                    "fp.down('#datatypes').setValue({type:type});",
+                    "// 加载数据",
+                    "Ext.Ajax.request({",
+                    "    url: './resources/data/device.json',",
+                    "    // id格式：device-ID、location-ID、room-ID、division-ID",
+                    "    params: { id: dataId },",
+                    "    success: function(response){",
+                    "        var text = response.responseText;",
+                    "        var obj = Ext.decode(text);",
+                    "        fp.getForm().loadRecord(Ext.create('Ext.data.Model', obj.device));",
+                    "    }",
+                    "});"
+                ]
+            },
+            "name": "loadData",
+            "designerId": "0a328770-42cb-4a15-9e34-208c61bb9053"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWindowClose",
+                "implHandler": [
+                    "var me = this;",
+                    "me.down('form').getForm().reset();"
+                ],
+                "name": "close",
+                "scope": "me"
+            },
+            "name": "onWindowClose",
+            "designerId": "9619dbb8-ee16-49b1-aba1-f00dae53f8c0"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homedevicecontextmenu",
+        "designer|userClassName": "home.device.ContextMenuViewController"
+    },
+    "designerId": "a01d7838-9e0c-4250-9a5b-501c4daa76e1"
+}

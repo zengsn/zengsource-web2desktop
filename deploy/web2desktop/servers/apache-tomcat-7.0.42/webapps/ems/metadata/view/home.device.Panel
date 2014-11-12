@@ -1,0 +1,856 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homedevicepanel",
+        "designer|userClassName": "home.device.Panel",
+        "itemId": "devicepanel",
+        "layout": "fit",
+        "title": "设备",
+        "width": null
+    },
+    "name": "MyPanel1",
+    "designerId": "65d30463-9554-4250-b3c1-9cad18c5969b",
+    "viewControllerInstanceId": "873f38b9-8027-4214-bfd4-b9019d0902a8",
+    "viewModelInstanceId": "dd2b5478-5e18-4369-adf5-4a1e088311ee",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "border": 1,
+                "dock": "top"
+            },
+            "name": "MyToolbar2",
+            "designerId": "bd40b793-7fe4-48a6-adc1-b1814a5d2663",
+            "cn": [
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": null,
+                        "layout|flex": null,
+                        "width": 200
+                    },
+                    "name": "MyRadioGroup",
+                    "designerId": "cf92a4d9-307b-4130-80c7-5040fcb15456",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "特殊设备",
+                                "checked": true,
+                                "fieldLabel": null,
+                                "name": "category"
+                            },
+                            "name": "MyRadio",
+                            "designerId": "a0c0c9cd-9e15-43ec-9e06-bf81787ba324",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onSpecialCatRadiofieldChange",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "if (newValue) { // true",
+                                            "    var tree = me.down('#devicetree');",
+                                            "    tree.getStore().getProxy().setUrl('./resources/data/specialdevicetree.json');",
+                                            "    tree.getStore().load({",
+                                            "        params: {category: 'special'},",
+                                            "        callback: function(records, opt, success) {",
+                                            "            if (success && records.length>0) {",
+                                            "                //tree.getStore().getRoot().expand();",
+                                            "                tree.getView().refresh();",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "name": "onSpecialCatRadiofieldChange",
+                                    "designerId": "f8489e27-cfff-4ad5-a46c-922564ba9b41"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "固定设备",
+                                "fieldLabel": null,
+                                "name": "category"
+                            },
+                            "name": "MyRadio1",
+                            "designerId": "d86ba2a9-cbfd-4876-922f-0f3bde44c1d9",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onFixCatRadiofieldChange",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "if (newValue) { // true",
+                                            "    var tree = me.down('#devicetree');",
+                                            "    tree.getStore().getProxy().setUrl('./resources/data/fixdevicetree.json');",
+                                            "    tree.getStore().load({",
+                                            "        params: {category: 'special'},",
+                                            "        callback: function(records, opt, success) {",
+                                            "            if (success && records.length>0) {",
+                                            "                //tree.getStore().getRoot().expand();",
+                                            "                tree.getView().refresh();",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "name": "onFixCatRadiofieldChange",
+                                    "designerId": "464adc98-9c2c-41ec-9e6b-a22e322124f3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.tree.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyBorder": true,
+                "itemId": "devicetree",
+                "rootVisible": false,
+                "singleExpand": null,
+                "store": "DeviceTree",
+                "title": null
+            },
+            "name": "MyTreePanel1",
+            "designerId": "0f570a37-6bf5-449c-a638-5cc5882c8157",
+            "cn": [
+                {
+                    "type": "Ext.tree.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "stripeRows": true
+                    },
+                    "name": "MyTreeView1",
+                    "designerId": "10d2f7ea-d207-474d-93a3-6f4c30a26b8c"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onDeviceTreeRender",
+                        "implHandler": [
+                            "// component.getStore().load({",
+                            "//     params: {category: 'special'},",
+                            "//     callback: function(records, opt, success) {",
+                            "//         //console.dir(success);",
+                            "//         if (success && records.length>0) {",
+                            "//             component.getStore().getRoot().expand();",
+                            "//         }",
+                            "//     }",
+                            "// });"
+                        ],
+                        "name": "render",
+                        "scope": "me"
+                    },
+                    "name": "onDeviceTreeRender",
+                    "designerId": "83707f52-c775-418a-a931-4f7a19512351"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onDeviceSelectionChange",
+                        "implHandler": [
+                            "var me = this;",
+                            "var tree = me.down('#devicetree');",
+                            "var bbar = me.getDockedItems('toolbar[dock=\"bottom\"]')[0];",
+                            "if (model.getCount()===1) {",
+                            "    var node = selected[0];",
+                            "    var grid = me.up('homepanel').down('#repairgrid');",
+                            "    bbar.down('#editBtn').enable();",
+                            "    bbar.down('#copyBtn').enable();",
+                            "    bbar.down('#deleteBtn').enable();",
+                            "    if (node.isLeaf()) {",
+                            "        var deviceId = selected[0].data.id;",
+                            "        grid.getStore().load({",
+                            "            params: {deviceId: deviceId}",
+                            "        });",
+                            "        // 检查设置按钮状态",
+                            "        if (node.data.status===0) {",
+                            "            bbar.down('#useBtn').enable();",
+                            "            //bbar.down('#returnBtn').disable();",
+                            "            bbar.down('#repairBtn').enable();",
+                            "            //bbar.down('#renewBtn').disable();",
+                            "        } else if (node.data.status===1) {",
+                            "            bbar.down('#useBtn').disable();",
+                            "            //bbar.down('#returnBtn').enable();",
+                            "            bbar.down('#repairBtn').enable();",
+                            "            //bbar.down('#renewBtn').disable();",
+                            "        } else if (node.data.status===-1) {",
+                            "            bbar.down('#useBtn').disable();",
+                            "            //bbar.down('#returnBtn').disable();",
+                            "            bbar.down('#repairBtn').disable();",
+                            "            //bbar.down('#renewBtn').enable();",
+                            "        }",
+                            "    } else { // 非叶节点",
+                            "        node.expand(); tree.getView().refresh();",
+                            "        var params = {};",
+                            "        if (node.data.id.indexOf('division-')>-1) {",
+                            "            params = {divisionId: node.data.id.replace('division-', '')};",
+                            "        } else if (node.data.id.indexOf('location-')>-1) {",
+                            "            params = {locationId: node.data.id.replace('location-', '')};",
+                            "        }",
+                            "        grid.getStore().load({",
+                            "            params: params",
+                            "        });",
+                            "        bbar.down('#useBtn').disable();",
+                            "        //bbar.down('#returnBtn').disable();",
+                            "        bbar.down('#repairBtn').disable();",
+                            "        //bbar.down('#renewBtn').disable();",
+                            "    }",
+                            "}"
+                        ],
+                        "name": "selectionchange",
+                        "scope": "me"
+                    },
+                    "name": "onDeviceSelectionChange",
+                    "designerId": "2986c302-dc93-4e1b-a288-5d2f293b935e"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onDeviceTreeItemContextMenu",
+                        "implHandler": [
+                            "var me = this;",
+                            "e.preventDefault();",
+                            "if (!me.deviceContextMenu) {",
+                            "    me.deviceContextMenu = Ext.create('widget.homedevicecontextmenu');",
+                            "    me.deviceContextMenu.devicePanel = me;",
+                            "}",
+                            "me.deviceContextMenu.checkStatus(record);",
+                            "me.deviceContextMenu.showAt(e.getXY());"
+                        ],
+                        "name": "itemcontextmenu",
+                        "scope": "me"
+                    },
+                    "name": "onDeviceTreeItemContextMenu",
+                    "designerId": "cc6f1d3f-3edf-4a52-87dc-dfed9a011b9b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "border": 1,
+                "dock": "bottom",
+                "style": null
+            },
+            "name": "MyToolbar3",
+            "designerId": "178ec6ff-f49e-4fe4-9b34-ea0f5e0d33a2",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "./resources/icons/add16.png",
+                        "itemId": "addBtn",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"新建\""
+                        ]
+                    },
+                    "name": "MyButton3",
+                    "designerId": "6f5114bb-a9a3-454e-a80e-3cd931992a28",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "panel.edit('add', button);"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "d0034285-0337-49dd-82d6-aebcf3d5881f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "icon": "./resources/icons/edit16.png",
+                        "itemId": "editBtn",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"修改\""
+                        ]
+                    },
+                    "name": "MyButton4",
+                    "designerId": "883e5397-227e-4655-bbc7-5781b8666c18",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "panel.edit('edit', button);"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "aefe08c8-3653-4723-9fc3-1c1715323fd9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "icon": "./resources/icons/copy16.png",
+                        "itemId": "copyBtn",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"复制\""
+                        ]
+                    },
+                    "name": "MyButton10",
+                    "designerId": "ed9b021b-6908-424d-8646-43b02d36e644",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "panel.copyOrDelete('copy');"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "66f11018-4a56-4c1a-b9df-5adc28c91103"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Separator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MySeparator3",
+                    "designerId": "9099cad0-4357-4382-8c00-8640529c4a1e"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "hidden": true,
+                        "icon": "./resources/icons/upload16.png",
+                        "itemId": "useBtn",
+                        "layout|flex": null,
+                        "margin": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"使用\""
+                        ]
+                    },
+                    "name": "MyButton5",
+                    "designerId": "e1617e2d-352f-4a4a-94e2-7cdd1d567781",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "var tree = panel.down('treepanel');",
+                                    "var selMod = tree.getSelectionModel();",
+                                    "if (selMod.getCount()==1) {",
+                                    "    var node = selMod.getSelection()[0];",
+                                    "    var grid = panel.up('homepanel').down('#repairgrid');",
+                                    "    var record = Ext.create('Ext.data.Model', {",
+                                    "        deviceId: node.data.id.replace('device-',''),",
+                                    "        deviceName: node.data.text,",
+                                    "        deviceStatus: node.data.status",
+                                    "    });",
+                                    "    //console.dir(record);",
+                                    "    grid.getStore().insert(0, record);",
+                                    "    var editor = grid.getPlugin('repairRowEditor');",
+                                    "    editor.startEdit(0, 5);",
+                                    "} else {",
+                                    "    Ext.Msg.alert('错误', '请点击选定一个设备进行操作！');",
+                                    "}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "de5de63e-5b4b-4ce2-87e7-b53df4fb07f1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "hidden": true,
+                        "icon": "./resources/icons/download16.png",
+                        "itemId": "returnBtn",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"归还\""
+                        ]
+                    },
+                    "name": "MyButton6",
+                    "designerId": "a79c110f-bff5-4c9a-9e50-bccdc30e9d26",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "var tree = panel.down('treepanel');",
+                                    "var selMod = tree.getSelectionModel();",
+                                    "if (selMod.getCount()==1) {",
+                                    "    var node = selMod.getSelection()[0];",
+                                    "    panel.manage('return', node, button);",
+                                    "} else {",
+                                    "    Ext.Msg.alert('错误', '请点击选定一个设备进行操作！');",
+                                    "}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "4be4c195-06fe-46e8-8557-a0857b4dd55f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "icon": "./resources/icons/right16.png",
+                        "itemId": "repairBtn",
+                        "layout|flex": null,
+                        "margin": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"报修\""
+                        ]
+                    },
+                    "name": "MyButton7",
+                    "designerId": "81b9318e-bf33-463a-b7e7-7a242a45045f",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "var tree = panel.down('treepanel');",
+                                    "var selMod = tree.getSelectionModel();",
+                                    "if (selMod.getCount()==1) {",
+                                    "    var node = selMod.getSelection()[0];",
+                                    "    var grid = panel.up('homepanel').down('#repairgrid');",
+                                    "    var record = Ext.create('Ext.data.Model', {",
+                                    "        deviceId: node.data.id.replace('device-',''),",
+                                    "        deviceName: node.data.text,",
+                                    "        deviceStatus: node.data.status",
+                                    "    });",
+                                    "    //console.dir(record);",
+                                    "    grid.getStore().insert(0, record);",
+                                    "    var editor = grid.getPlugin('repairRowEditor');",
+                                    "    editor.startEdit(0, 5);",
+                                    "} else {",
+                                    "    Ext.Msg.alert('错误', '请点击选定一个设备进行操作！');",
+                                    "}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "ee5f6c49-cea4-44f1-bcc6-ed2163874b00"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "hidden": true,
+                        "icon": "./resources/icons/left16.png",
+                        "itemId": "renewBtn",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"修好\""
+                        ]
+                    },
+                    "name": "MyButton8",
+                    "designerId": "eb194ecf-2414-4945-b57a-81dafc354fca",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "var tree = panel.down('treepanel');",
+                                    "var selMod = tree.getSelectionModel();",
+                                    "if (selMod.getCount()==1) {",
+                                    "    var node = selMod.getSelection()[0];",
+                                    "    panel.manage('renew', node, button);",
+                                    "} else {",
+                                    "    Ext.Msg.alert('错误', '请点击选定一个设备进行操作！');",
+                                    "}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "a0255d49-2c47-431e-a3d8-f3c9bf03de67"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MyFill1",
+                    "designerId": "e571510e-426c-4284-91af-1af1827bc867"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "icon": "./resources/icons/trash16.png",
+                        "itemId": "deleteBtn",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "\"删除\""
+                        ]
+                    },
+                    "name": "MyButton9",
+                    "designerId": "eed25856-d83f-41d9-ab0a-1111707215d3",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var panel = button.up('homedevicepanel');",
+                                    "panel.copyOrDelete('delete');"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "c1142d10-9255-42cc-b9d5-1860811514ce"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "opt",
+                    "target"
+                ],
+                "fn": "edit",
+                "implHandler": [
+                    "var me = this;",
+                    "if (!me.deviceEditWin) {",
+                    "    me.deviceEditWin = Ext.create('widget.homedeviceeditwindow');",
+                    "}",
+                    "var tree = me.down('treepanel');",
+                    "var selMod = tree.getSelectionModel();",
+                    "var node = {};",
+                    "if (selMod.getCount()!==1 && 'edit'==opt) {",
+                    "    Ext.Msg.alert('错误', '请点击选定一个设备进行编辑！');",
+                    "    return; // 编辑时",
+                    "} //console.dir(opt);",
+                    "if (selMod.getCount()===1) {",
+                    "    node = selMod.getSelection()[0];",
+                    "}",
+                    "if ('edit'==opt) {",
+                    "    me.deviceEditWin.setTitle('编辑');",
+                    "    me.deviceEditWin.loadData(node.data.id);",
+                    "} else {",
+                    "    me.deviceEditWin.setTitle('新建');",
+                    "}",
+                    "me.deviceEditWin.target = target; // 动画",
+                    "me.deviceEditWin.show(target);"
+                ]
+            },
+            "name": "edit",
+            "designerId": "805ff574-961f-4318-ae18-d6ec8acc34cd"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "opt"
+                ],
+                "fn": "copyOrDelete",
+                "implHandler": [
+                    "var me = this;",
+                    "var tree = me.down('treepanel');",
+                    "var selMod = tree.getSelectionModel();",
+                    "if (selMod.getCount()==1) {",
+                    "    var node = selMod.getSelection()[0];",
+                    "    Ext.Msg.confirm('操作确认', // title",
+                    "                    '确定要'+('copy'==opt?'复制':'删除')+'吗？', // message",
+                    "                    function(btnId, text, opt) { // callback",
+                    "        if ('yes'==btnId) {",
+                    "            Ext.Ajax.request({",
+                    "                url: './resources/data/success.json',",
+                    "                // id格式：device-ID、location-ID、room-ID、division-ID",
+                    "                params: { id: node.data.id, option: opt },",
+                    "                success: function(response){",
+                    "                    var text = response.responseText;",
+                    "                    var obj = Ext.decode(text);",
+                    "                    tree.getStore().load();",
+                    "                }",
+                    "            });",
+                    "        }",
+                    "    });",
+                    "} else {",
+                    "    Ext.Msg.alert('错误', '请点击选定一个记录进行复制！');",
+                    "}"
+                ]
+            },
+            "name": "copyOrDelete",
+            "designerId": "27ace4d8-c8c8-4dbc-b9a1-ac79ebb1edd5"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "operation",
+                    "node",
+                    "target"
+                ],
+                "fn": "manage",
+                "implHandler": [
+                    "var me = this;",
+                    "if (!me.deviceEditWin) {",
+                    "    me.deviceEditWin = Ext.create('widget.homedeviceeditwindow');",
+                    "}",
+                    "if (operation=='use') {",
+                    "    me.deviceEditWin.useDevice(node.data.id.replace('device-',''));",
+                    "} else if (operation=='return') {",
+                    "    me.deviceEditWin.returnDevice(node.data.id.replace('device-',''));",
+                    "} else if (operation=='repair') {",
+                    "    me.deviceEditWin.repairDevice(node.data.id.replace('device-',''));",
+                    "} else if (operation=='renew') {",
+                    "    me.deviceEditWin.renewDevice(node.data.id.replace('device-',''));",
+                    "}",
+                    "me.deviceEditWin.target = target; // 动画",
+                    "me.deviceEditWin.show(target);"
+                ]
+            },
+            "name": "manage",
+            "designerId": "9b2eb96b-778c-4e78-9975-2da47eb07708"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homedeviceeditwindow",
+        "designer|userClassName": "home.device.EditWindowViewController"
+    },
+    "designerId": "590c76da-0189-4ec2-9d70-fd782949dbcd"
+}

@@ -1,0 +1,6 @@
+{
+    "webBuild": {
+        "environment": "production",
+        "publishPath": "/Applications/XAMPP/xamppfiles/htdocs/"
+    }
+}

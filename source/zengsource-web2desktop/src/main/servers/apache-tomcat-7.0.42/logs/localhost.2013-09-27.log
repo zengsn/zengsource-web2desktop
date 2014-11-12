@@ -1,0 +1,48 @@
+九月 27, 2013 12:02:03 上午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+九月 27, 2013 12:02:03 上午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+九月 27, 2013 12:02:08 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+九月 27, 2013 12:02:08 上午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+九月 27, 2013 12:02:08 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7438cd0b')
+九月 27, 2013 12:06:58 上午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+九月 27, 2013 12:06:58 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+九月 27, 2013 12:06:58 上午 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+九月 27, 2013 12:07:05 上午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+九月 27, 2013 12:07:05 上午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+九月 27, 2013 12:07:12 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+九月 27, 2013 12:07:12 上午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+九月 27, 2013 12:07:12 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@44045db0')
+九月 27, 2013 12:09:03 上午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+九月 27, 2013 12:09:03 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+九月 27, 2013 12:09:03 上午 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+九月 27, 2013 11:27:42 上午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+九月 27, 2013 11:27:42 上午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+九月 27, 2013 11:27:49 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+九月 27, 2013 11:27:49 上午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+九月 27, 2013 11:27:49 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@175bf831')
+九月 27, 2013 11:28:06 上午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+九月 27, 2013 11:28:06 上午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+九月 27, 2013 11:28:06 上午 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext

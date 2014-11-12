@@ -1,0 +1,604 @@
+?? 19, 2014 6:00:19 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 6:00:21 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 6:00:21 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 6:00:21 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 4024 ms
+?? 19, 2014 6:00:22 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 6:00:22 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 6:00:22 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-web2desktop/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 6:00:23 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [605] milliseconds.
+?? 19, 2014 6:00:23 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-web2desktop/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 6:00:23 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-web2desktop/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 6:00:23 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-web2desktop/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 6:00:23 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-web2desktop/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 6:00:23 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 6:00:23 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 6:00:23 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1592 ms
+?? 19, 2014 6:05:12 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 6:05:12 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 6:05:12 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 6:05:12 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 6:05:13 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 6:05:13 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 6:05:13 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 6:05:13 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 7:57:19 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 7:57:19 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 7:57:19 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 7:57:19 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1048 ms
+?? 19, 2014 7:57:19 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 7:57:19 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 7:57:19 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 7:57:20 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [569] milliseconds.
+?? 19, 2014 7:57:20 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 7:57:20 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 7:57:20 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 7:57:21 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 7:57:21 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 7:57:21 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 7:57:21 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1331 ms
+?? 19, 2014 8:08:00 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:08:00 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:00 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:00 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:08:00 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:00 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:00 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:00 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:07 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:08:08 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:08 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:08 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 896 ms
+?? 19, 2014 8:08:08 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:08:08 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:08:08 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:08:08 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [508] milliseconds.
+?? 19, 2014 8:08:08 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:08:09 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:08:09 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:08:09 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:08:09 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:09 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:09 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1214 ms
+?? 19, 2014 8:08:48 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:08:48 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:48 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:48 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:08:48 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:48 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:48 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:48 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:53 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:08:54 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:54 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:54 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 910 ms
+?? 19, 2014 8:08:54 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:08:54 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:08:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:08:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:08:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:08:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:08:55 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:08:55 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:08:55 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:08:55 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 727 ms
+?? 19, 2014 8:10:39 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:10:39 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:10:39 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:10:39 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:10:39 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:10:39 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:10:39 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:10:39 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:10:44 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:10:45 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:10:45 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:10:45 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 893 ms
+?? 19, 2014 8:10:45 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:10:45 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:10:45 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:10:46 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [540] milliseconds.
+?? 19, 2014 8:10:46 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:10:46 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:10:46 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:10:46 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:10:46 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:10:46 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:10:46 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1242 ms
+?? 19, 2014 8:11:00 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:11:00 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:11:01 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:11:01 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:11:01 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:11:01 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:11:01 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:11:01 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:14:10 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:14:11 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:14:11 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:14:11 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 726 ms
+?? 19, 2014 8:14:11 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:14:11 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:14:11 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:14:11 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [493] milliseconds.
+?? 19, 2014 8:14:11 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:14:12 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:14:12 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:14:12 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:14:12 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:14:12 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:14:12 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1180 ms
+?? 19, 2014 8:18:36 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:18:36 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:18:36 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:18:37 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:18:37 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:18:37 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:18:37 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:18:37 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:18:42 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:18:43 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:18:43 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:18:43 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 697 ms
+?? 19, 2014 8:18:43 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:18:43 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:18:43 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:18:43 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [510] milliseconds.
+?? 19, 2014 8:18:43 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:18:44 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:18:44 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:18:44 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:18:44 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:18:44 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:18:44 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1217 ms
+?? 19, 2014 8:19:42 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:19:42 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:19:42 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:19:42 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:19:42 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:19:42 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:19:42 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:19:42 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:40:16 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:40:17 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:40:17 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:40:17 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 763 ms
+?? 19, 2014 8:40:17 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:40:17 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:40:17 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:40:17 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:40:17 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:40:17 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:40:17 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:40:17 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:40:17 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:40:17 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 761 ms
+?? 19, 2014 8:41:17 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:41:17 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:41:17 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:41:17 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:41:17 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:41:17 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:41:17 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:41:17 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:41:23 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:41:24 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:41:24 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:41:24 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 745 ms
+?? 19, 2014 8:41:24 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:41:24 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:41:24 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:41:24 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:41:24 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:41:24 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:41:24 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:41:24 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:41:24 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:41:24 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 767 ms
+?? 19, 2014 8:44:47 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:44:47 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:44:47 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:44:47 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:44:47 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:44:47 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:44:47 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:44:47 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:44:53 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:44:53 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:44:53 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:44:53 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 726 ms
+?? 19, 2014 8:44:53 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:44:53 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:44:53 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:44:54 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [457] milliseconds.
+?? 19, 2014 8:44:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:44:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:44:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:44:54 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:44:54 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:44:54 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:44:54 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1126 ms
+?? 19, 2014 8:50:50 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:50:50 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:50:50 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:50:50 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:50:50 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:50:50 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:50:50 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:50:50 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:50:51 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:50:51 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:50:51 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:50:51 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 741 ms
+?? 19, 2014 8:50:51 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:50:51 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:50:51 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:50:52 ?? org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [551] milliseconds.
+?? 19, 2014 8:50:52 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:50:52 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:50:52 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:50:52 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:50:52 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:50:52 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:50:52 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1263 ms
+?? 19, 2014 8:51:37 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:51:37 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:51:37 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:51:37 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:51:37 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:51:37 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:51:37 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:51:37 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:51:38 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:51:38 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:51:38 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:51:38 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 741 ms
+?? 19, 2014 8:51:38 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:51:38 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:51:38 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:51:38 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:51:39 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:51:39 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:51:39 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:51:39 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:51:39 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:51:39 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 767 ms
+?? 19, 2014 8:52:46 ?? org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+?? 19, 2014 8:52:46 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:52:46 ?? org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:52:46 ?? org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+?? 19, 2014 8:52:47 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:52:47 ?? org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:52:47 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:52:47 ?? org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:52:47 ?? org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+?? 19, 2014 8:52:48 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:52:48 ?? org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:52:48 ?? org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 743 ms
+?? 19, 2014 8:52:48 ?? org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+?? 19, 2014 8:52:48 ?? org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+?? 19, 2014 8:52:48 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/docs
+?? 19, 2014 8:52:48 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/examples
+?? 19, 2014 8:52:48 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/host-manager
+?? 19, 2014 8:52:48 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/manager
+?? 19, 2014 8:52:48 ?? org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/workspace-java/zengsource-web2desktop/src/main/servers/apache-tomcat-7.0.42/webapps/ROOT
+?? 19, 2014 8:52:48 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+?? 19, 2014 8:52:48 ?? org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+?? 19, 2014 8:52:48 ?? org.apache.catalina.startup.Catalina start
+INFO: Server startup in 782 ms
+十月 19, 2014 8:58:12 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+十月 19, 2014 8:58:13 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+十月 19, 2014 8:58:13 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+十月 19, 2014 8:58:13 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 931 ms
+十月 19, 2014 8:58:13 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+十月 19, 2014 8:58:13 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+十月 19, 2014 8:58:13 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/github.com/zengsource-web2desktop/deploy/web2desktop/servers/apache-tomcat-7.0.42/webapps/docs
+十月 19, 2014 8:58:14 下午 org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [575] milliseconds.
+十月 19, 2014 8:58:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/github.com/zengsource-web2desktop/deploy/web2desktop/servers/apache-tomcat-7.0.42/webapps/ems
+十月 19, 2014 8:58:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/github.com/zengsource-web2desktop/deploy/web2desktop/servers/apache-tomcat-7.0.42/webapps/examples
+十月 19, 2014 8:58:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/github.com/zengsource-web2desktop/deploy/web2desktop/servers/apache-tomcat-7.0.42/webapps/host-manager
+十月 19, 2014 8:58:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/github.com/zengsource-web2desktop/deploy/web2desktop/servers/apache-tomcat-7.0.42/webapps/manager
+十月 19, 2014 8:58:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/github.com/zengsource-web2desktop/deploy/web2desktop/servers/apache-tomcat-7.0.42/webapps/ROOT
+十月 19, 2014 8:58:14 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+十月 19, 2014 8:58:14 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+十月 19, 2014 8:58:14 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1459 ms

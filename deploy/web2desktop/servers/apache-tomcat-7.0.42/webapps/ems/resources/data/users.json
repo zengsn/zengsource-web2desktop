@@ -1,0 +1,8 @@
+{
+	"success": true,
+	"users": [{
+		"id": 1,
+		"username": "admin",
+		"sex": "female"
+	}]
+}

@@ -1,0 +1,339 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closeAction": "hide",
+        "designer|userAlias": "homeusereditwindow",
+        "designer|userClassName": "home.user.EditWindow",
+        "height": null,
+        "layout": "fit",
+        "modal": true,
+        "title": "修改密码",
+        "width": 400
+    },
+    "name": "home.device.EditWindow1",
+    "designerId": "ed41f97e-bfdb-475c-a48b-4631cf89e8ec",
+    "viewControllerInstanceId": "23bfb04b-64ed-4bf0-b6ef-209d4ba3be80",
+    "viewModelInstanceId": "cd237ba7-11bc-43f6-a958-79ff76026ddc",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "itemId": "editform",
+                "title": null
+            },
+            "name": "MyForm1",
+            "designerId": "daf7063c-a9d8-4f9d-8503-e6de189a4279",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Hidden",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "layout|anchor": "100%",
+                        "name": "id"
+                    },
+                    "name": "MyHiddenField",
+                    "designerId": "c2462f35-2b3a-4b11-8302-89bd40f3c5ca"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "用户名",
+                        "inputType": null,
+                        "layout|anchor": "100%",
+                        "name": "username"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "6196800d-809b-4a8f-8594-d1558ddb6b8b"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "性别"
+                    },
+                    "name": "MyRadioGroup1",
+                    "designerId": "d0865d9c-fac5-44b4-8013-554c1a61a294",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "女",
+                                "fieldLabel": null,
+                                "inputValue": "female",
+                                "name": "sex"
+                            },
+                            "name": "MyRadio2",
+                            "designerId": "ae26a3a2-b5c7-48c8-87fd-fe24bf0a2290"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "男",
+                                "fieldLabel": null,
+                                "inputValue": "sex",
+                                "name": "male"
+                            },
+                            "name": "MyRadio3",
+                            "designerId": "b5f65aad-bb9c-4fdb-8218-df82dc0066c3"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "原始密码",
+                        "inputType": "password",
+                        "layout|anchor": "100%",
+                        "name": "password"
+                    },
+                    "name": "MyTextField9",
+                    "designerId": "c3a18924-34d1-496c-a486-857331de0574"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "新密码",
+                        "inputType": "password",
+                        "layout|anchor": "100%",
+                        "name": "password1"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "f9f5066a-3d8f-4b3c-8cab-0c46f40a6ac6"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "再输一次",
+                        "inputType": "password",
+                        "layout|anchor": "100%",
+                        "name": "password2"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "0203f79b-4be5-4121-9e13-05e779d63e00"
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "height": null,
+                        "itemId": "buttons",
+                        "layout": "hbox"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "586210d8-f5d0-45c5-9803-58867b4d650c",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "d46c8d86-0d27-4b1f-b283-cf2c37926221"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "保存",
+                                "width": 100
+                            },
+                            "name": "MyButton11",
+                            "designerId": "ad0c9e4d-2bf3-4a14-bfba-d3db600b9914",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var fp = button.up('form');",
+                                            "fp.getForm().submit({",
+                                            "    clientValidation: true,",
+                                            "    url: './resources/data/success.json',",
+                                            "    params: {},",
+                                            "    success: function(form, action) {",
+                                            "        Ext.Msg.alert('成功', action.result.msg);",
+                                            "        fp.up('window').close();",
+                                            "    },",
+                                            "    failure: function(form, action) {",
+                                            "        switch (action.failureType) {",
+                                            "            case Ext.form.action.Action.CLIENT_INVALID:",
+                                            "                Ext.Msg.alert('失败', '请正确填写表单内容！');",
+                                            "                break;",
+                                            "            case Ext.form.action.Action.CONNECT_FAILURE:",
+                                            "                Ext.Msg.alert('失败', '通信错误！');",
+                                            "                break;",
+                                            "            case Ext.form.action.Action.SERVER_INVALID:",
+                                            "               Ext.Msg.alert('失败', action.result.msg);",
+                                            "       }",
+                                            "    }",
+                                            "});"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "f3251391-2248-45ad-b564-1e0d82e2368b"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|margins": null,
+                                "margin": "0 0 0 10",
+                                "text": "取消"
+                            },
+                            "name": "MyButton12",
+                            "designerId": "5d9b6691-1d40-4594-9ffc-998a10b7570a",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "a68411eb-0af9-49d3-85de-fb71093ce756"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWindowShow",
+                "implHandler": [
+                    "var me = this;",
+                    "var fp = me.down('form');",
+                    "Ext.Ajax.request({",
+                    "    url: './resources/data/user.json',",
+                    "    params: { },",
+                    "    success: function(response){",
+                    "        var text = response.responseText;",
+                    "        var obj = Ext.decode(text);",
+                    "        fp.getForm().loadRecord(Ext.create('Ext.data.Model', obj.user));",
+                    "    }",
+                    "});"
+                ],
+                "name": "show",
+                "scope": "me"
+            },
+            "name": "onWindowShow",
+            "designerId": "4c04e86e-45db-43c7-9be0-da2ea91da1f1"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWindowClose",
+                "implHandler": [
+                    "var me = this;",
+                    "me.down('form').getForm().reset();"
+                ],
+                "name": "close",
+                "scope": "me"
+            },
+            "name": "onWindowClose",
+            "designerId": "d07251e9-3d36-4d99-abff-26d2d1ca18b8"
+        }
+    ]
+}

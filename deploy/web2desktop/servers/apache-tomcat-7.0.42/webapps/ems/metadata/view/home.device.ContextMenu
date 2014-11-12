@@ -1,0 +1,259 @@
+{
+    "type": "Ext.menu.Menu",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homedevicecontextmenu",
+        "designer|userClassName": "home.device.ContextMenu",
+        "width": 120
+    },
+    "name": "MyMenu",
+    "designerId": "c509ae62-e5dc-446a-8d44-caf06a46800e",
+    "viewControllerInstanceId": "a01d7838-9e0c-4250-9a5b-501c4daa76e1",
+    "viewModelInstanceId": "3497c4c6-5b04-4d75-8a4d-27eb661385b7",
+    "cn": [
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "icon": "./resources/icons/right16.png",
+                "itemId": "repairItem",
+                "text": "报修"
+            },
+            "name": "MyMenuItem5",
+            "designerId": "17617b74-334d-4711-8a3e-58ca46148775"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "icon": "./resources/icons/left16.png",
+                "itemId": "renewItem",
+                "text": "恢复"
+            },
+            "name": "MyMenuItem6",
+            "designerId": "bff55baa-349e-4d0c-b675-66a0f693454b"
+        },
+        {
+            "type": "Ext.menu.Separator",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MySeparator1",
+            "designerId": "81ca641c-61cb-4e2e-b286-554fff5fd698"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "icon": "./resources/icons/add16.png",
+                "itemId": "addItem",
+                "text": "增加"
+            },
+            "name": "MyMenuItem",
+            "designerId": "07613203-f4d5-4ce3-a0a5-2eeb975320ab",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item",
+                            "e"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "item.parentMenu.devicePanel.edit('add');"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "9d87c4bd-f47d-48d4-a6a0-e96aeaad6682"
+                }
+            ]
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "icon": "./resources/icons/edit16.png",
+                "itemId": "editItem",
+                "text": "修改"
+            },
+            "name": "MyMenuItem4",
+            "designerId": "0479d4ab-cf38-463b-815d-d59d6934fddd",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item",
+                            "e"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "item.parentMenu.devicePanel.edit('edit');"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "81fb31ac-8f0b-47ef-bdac-49828140368f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "icon": "./resources/icons/copy16.png",
+                "itemId": "copyItem",
+                "text": "复制"
+            },
+            "name": "MyMenuItem7",
+            "designerId": "3b401d81-2f71-459c-b155-de65a524722b",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item",
+                            "e"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "item.parentMenu.devicePanel.copyOrDelete('copy');"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "6a090f53-33c8-48ae-8096-5681617736f1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.menu.Separator",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MySeparator",
+            "designerId": "8df9c221-a728-4065-930d-c95b664a5836"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "icon": "./resources/icons/trash16.png",
+                "itemId": "deleteItem",
+                "text": "删除"
+            },
+            "name": "MyMenuItem3",
+            "designerId": "15e99db3-3087-47a2-981d-e87d764b2142",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item",
+                            "e"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "item.parentMenu.devicePanel.copyOrDelete('delete');"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "265dd090-bef6-40ec-8949-e89eac2d62ce"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "node"
+                ],
+                "fn": "checkStatus",
+                "implHandler": [
+                    "var me = this;",
+                    "if (node && node.isLeaf()) {",
+                    "    if (node.data.status===0) { // 正常",
+                    "        //me.down('#useItem').enable();",
+                    "        //me.down('#returnItem').disable();",
+                    "        me.down('#repairItem').enable();",
+                    "        me.down('#renewItem').disable();",
+                    "    } else if (node.data.status===1) { // 使用中",
+                    "        //me.down('#useItem').disable();",
+                    "        //me.down('#returnItem').enable();",
+                    "        me.down('#repairItem').enable();",
+                    "        me.down('#renewItem').disable();",
+                    "    } else if (node.data.status===-1) { // 修理中",
+                    "        //me.down('#useItem').disable();",
+                    "        //me.down('#returnItem').disable();",
+                    "        me.down('#repairItem').disable();",
+                    "        me.down('#renewItem').enable();",
+                    "    }",
+                    "} else if (node) {",
+                    "    //me.down('#useItem').disable();",
+                    "    //me.down('#returnItem').disable();",
+                    "    me.down('#repairItem').disable();",
+                    "    me.down('#renewItem').disable();",
+                    "}"
+                ]
+            },
+            "name": "checkStatus",
+            "designerId": "ae7369c7-afd5-46e4-bc7c-1770f8e5192e"
+        }
+    ]
+}

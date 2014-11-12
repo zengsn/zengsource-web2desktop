@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homemaintainancetabpanel",
+        "designer|userClassName": "home.maintainance.TabPanelViewModel"
+    },
+    "designerId": "803211d0-933a-4893-b258-ee9fa461468a"
+}

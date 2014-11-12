@@ -1,0 +1,270 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyStyle": [
+            "\"background: url(./resources/images/bg.jpg)\""
+        ],
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "loginpanel",
+        "designer|userClassName": "login.Panel",
+        "itemId": "card-login1",
+        "layout": "absolute",
+        "requires": [
+            "Ext.event.Event"
+        ],
+        "title": null,
+        "width": null
+    },
+    "name": "MyPanel",
+    "designerId": "ed29dbba-d65c-4878-879c-aaf52975b62b",
+    "viewControllerInstanceId": "c4d72eb9-52fc-4ac5-b2e3-e6eb38f1eead",
+    "viewModelInstanceId": "6784aa25-15b0-4f6f-84c3-4705a0c2ea80",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 5,
+                "bodyStyle": [
+                    "\"backgroud:#DCDCDC;\""
+                ],
+                "html": [
+                    "\"临床科室设备管理系统\""
+                ],
+                "itemId": "logo",
+                "layout|x": 0,
+                "layout|y": 5,
+                "title": null
+            },
+            "name": "MyPanel2",
+            "designerId": "7c4a3536-1d4f-44ac-bfec-4039a4b57fbe"
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyBorder": null,
+                "bodyPadding": 10,
+                "fieldDefaults": [
+                    "{labelWidth:75}"
+                ],
+                "layout|x": 50,
+                "layout|y": 50,
+                "title": "登录",
+                "width": 400
+            },
+            "name": "MyForm",
+            "designerId": "0220bbaf-779a-43b8-a240-ddf636ccf7bf",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onLoginFormRender",
+                        "implHandler": [
+                            "var me = this;//console.dir(me);",
+                            "var fp = component;",
+                            "var w = fp.getWidth();",
+                            "var h = fp.getHeight();",
+                            "var v = me.up('viewport');",
+                            "var vw = v.getWidth();",
+                            "var vh = v.getHeight();",
+                            "fp.setXY([(vw-w)*2/3, (vh-h)/2]);"
+                        ],
+                        "name": "render",
+                        "scope": "me"
+                    },
+                    "name": "onLoginFormRender",
+                    "designerId": "d3cb2df5-ba90-479a-b5bc-3502402c8cd7"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onLoginFormAfterLayout",
+                        "implHandler": [
+                            "var me = this;",
+                            "var fp = container;",
+                            "setTimeout(function() {",
+                            "    fp.getForm().findField('username').focus();",
+                            "}, 500);"
+                        ],
+                        "name": "afterlayout",
+                        "scope": "me"
+                    },
+                    "name": "onLoginFormAfterLayout",
+                    "designerId": "09497617-32a5-4287-8d33-e192dcfe9324"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "帐号",
+                        "layout|anchor": "100%",
+                        "name": "username"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "b37a161f-1b7d-4d25-9552-75e31c45a172"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "enableKeyEvents": true,
+                        "fieldLabel": "密码",
+                        "inputType": "password",
+                        "layout|anchor": "100%",
+                        "name": "password"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "c43a9aca-0da5-4260-82c8-bbf4f9563eb1",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onPasswordKeypress",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "if (e.getKey()==Ext.event.Event.ENTER) {",
+                                    "    me.doLogin(textfield);",
+                                    "}"
+                                ],
+                                "name": "keypress",
+                                "scope": "me"
+                            },
+                            "name": "onPasswordKeypress",
+                            "designerId": "91deb1ac-15b7-424c-8b3f-b1236cd8e9b3"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "itemId": "buttons",
+                        "layout": "hbox"
+                    },
+                    "name": "MyContainer",
+                    "designerId": "36a43fb4-eecf-4d7d-bafb-544950dc3cba",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "fillct",
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer1",
+                            "designerId": "f36c6738-63a9-4983-bb67-80ae87ca02ed"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "defaultAlign": null,
+                                "iconAlign": null,
+                                "text": "登录",
+                                "width": 100
+                            },
+                            "name": "MyButton",
+                            "designerId": "64d74fec-c0e1-4cd0-9bb4-6d17222ea8d2",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var me = button.up('loginpanel');",
+                                            "me.doLogin(button);"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "1eeef118-631f-48a1-8fa3-4d4b7070d49e"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "target"
+                ],
+                "fn": "doLogin",
+                "implHandler": [
+                    "var me = this;",
+                    "var fp = target.up('form');",
+                    "var vp = fp.up('viewport');",
+                    "var main = me.up('main');",
+                    "main.getLayout().setActiveItem('card-home');"
+                ]
+            },
+            "name": "doLogin",
+            "designerId": "8a08ba16-7803-4547-aebf-15508329e7a3"
+        }
+    ]
+}

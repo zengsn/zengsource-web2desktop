@@ -1,0 +1,16 @@
+十月 22, 2014 5:24:40 下午 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+十月 22, 2014 5:24:40 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+十月 22, 2014 5:24:40 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+十月 22, 2014 5:24:40 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+十月 22, 2014 5:24:40 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+十月 22, 2014 5:24:40 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+十月 22, 2014 5:24:40 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+十月 22, 2014 5:24:40 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]

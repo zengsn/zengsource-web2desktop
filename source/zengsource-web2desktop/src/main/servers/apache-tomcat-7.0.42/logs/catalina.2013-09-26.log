@@ -1,0 +1,238 @@
+九月 26, 2013 11:34:54 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 26, 2013 11:34:54 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:34:54 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:34:54 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 771 ms
+九月 26, 2013 11:34:54 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+九月 26, 2013 11:34:54 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+九月 26, 2013 11:34:54 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/docs
+九月 26, 2013 11:34:55 下午 org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [218] milliseconds.
+九月 26, 2013 11:34:55 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/examples
+九月 26, 2013 11:34:55 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/host-manager
+九月 26, 2013 11:34:55 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/manager
+九月 26, 2013 11:34:55 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/ROOT
+九月 26, 2013 11:34:55 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:34:55 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:34:55 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 879 ms
+九月 26, 2013 11:36:13 下午 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 26, 2013 11:36:13 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:36:13 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:36:13 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+九月 26, 2013 11:36:13 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:36:13 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:36:13 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:36:13 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:36:22 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 26, 2013 11:36:22 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:36:22 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:36:22 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 797 ms
+九月 26, 2013 11:36:22 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+九月 26, 2013 11:36:22 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+九月 26, 2013 11:36:22 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/docs
+九月 26, 2013 11:36:23 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/examples
+九月 26, 2013 11:36:23 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/host-manager
+九月 26, 2013 11:36:23 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/manager
+九月 26, 2013 11:36:23 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/ROOT
+九月 26, 2013 11:36:23 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:36:23 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:36:23 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 759 ms
+九月 26, 2013 11:40:06 下午 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 26, 2013 11:40:06 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:40:06 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:40:06 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+九月 26, 2013 11:40:06 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:40:06 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:40:06 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:40:06 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:40:20 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 26, 2013 11:40:21 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:40:21 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:40:21 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 815 ms
+九月 26, 2013 11:40:21 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+九月 26, 2013 11:40:21 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+九月 26, 2013 11:40:21 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/docs
+九月 26, 2013 11:40:21 下午 org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [168] milliseconds.
+九月 26, 2013 11:40:21 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/examples
+九月 26, 2013 11:40:22 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/host-manager
+九月 26, 2013 11:40:22 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/manager
+九月 26, 2013 11:40:22 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/ROOT
+九月 26, 2013 11:40:22 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:40:22 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:40:22 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 919 ms
+九月 26, 2013 11:41:37 下午 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 26, 2013 11:41:37 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:41:37 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:41:37 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+九月 26, 2013 11:41:37 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:41:37 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:41:37 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:41:37 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:41:40 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 26, 2013 11:41:41 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:41:41 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:41:41 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 796 ms
+九月 26, 2013 11:41:41 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+九月 26, 2013 11:41:41 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+九月 26, 2013 11:41:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/docs
+九月 26, 2013 11:41:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/examples
+九月 26, 2013 11:41:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/host-manager
+九月 26, 2013 11:41:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/manager
+九月 26, 2013 11:41:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/ROOT
+九月 26, 2013 11:41:41 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:41:41 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:41:41 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 744 ms
+九月 26, 2013 11:42:45 下午 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 26, 2013 11:42:45 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:42:45 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:42:45 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+九月 26, 2013 11:42:45 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:42:45 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:42:45 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:42:45 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:42:56 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/zengsn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 26, 2013 11:42:56 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:42:56 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:42:56 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 813 ms
+九月 26, 2013 11:42:56 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+九月 26, 2013 11:42:56 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+九月 26, 2013 11:42:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/docs
+九月 26, 2013 11:42:57 下午 org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [195] milliseconds.
+九月 26, 2013 11:42:57 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/examples
+九月 26, 2013 11:42:57 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/host-manager
+九月 26, 2013 11:42:57 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/manager
+九月 26, 2013 11:42:57 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/ROOT
+九月 26, 2013 11:42:57 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:42:57 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:42:57 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 907 ms
+九月 26, 2013 11:43:47 下午 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/xbus.war
+九月 26, 2013 11:43:48 下午 org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/Users/zengsn/Develop/apache-tomcat-7.0.42/webapps/xbus/WEB-INF/lib/servlet-api-2.4.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+九月 26, 2013 11:54:52 下午 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 26, 2013 11:54:52 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:54:52 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:54:52 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+九月 26, 2013 11:54:52 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/xbus] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+九月 26, 2013 11:54:52 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/xbus] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+九月 26, 2013 11:54:52 下午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/xbus] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1ef57653]) and a value of type [org.zengsource.mvc.MvcContext] (value [org.zengsource.mvc.MvcContext@52b5306]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 26, 2013 11:54:52 下午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/xbus] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1ef57653]) and a value of type [org.zengsource.mvc.MvcContext] (value [org.zengsource.mvc.MvcContext@5f57b190]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 26, 2013 11:54:52 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:54:52 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 26, 2013 11:54:52 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+九月 26, 2013 11:54:52 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]

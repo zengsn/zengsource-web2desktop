@@ -1,0 +1,569 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "settingpanel",
+        "designer|userClassName": "setting.Panel",
+        "itemId": "card-setting",
+        "layout": "border",
+        "title": null
+    },
+    "name": "MyPanel",
+    "designerId": "193dc501-5012-4c6c-aa91-a0481fa30e72",
+    "viewControllerInstanceId": "7939191e-320b-4221-9c68-d60e6f417609",
+    "viewModelInstanceId": "65129679-8767-4e86-99c7-003cad4e9657",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "logopanel",
+                "layout|region": "north"
+            },
+            "name": "home.logopanel1",
+            "designerId": "13560912-e2ef-40b3-993c-c463a83d35d5",
+            "masterInstanceId": "be0cfeb7-aaab-4e20-ae49-bf3375fb470e"
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "itemId": "settingtabs",
+                "layout|region": "center"
+            },
+            "name": "MyTabPanel",
+            "designerId": "8dd281f6-f95e-46ed-8d90-ed61e51c67b6",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "usergrid",
+                        "store": "Users",
+                        "title": "用户设置"
+                    },
+                    "name": "MyGridPanel1",
+                    "designerId": "b2e43e49-bd0d-4007-90fb-4967a9ec0eca",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowNumberer2",
+                            "designerId": "9ca07ce4-942d-40d7-ac36-26c9836308d4"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "username",
+                                "text": "用户名"
+                            },
+                            "name": "MyColumn5",
+                            "designerId": "94fa877c-2767-4f58-aa21-2ef8eecce8cc"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "sex",
+                                "text": "性别"
+                            },
+                            "name": "MyColumn13",
+                            "designerId": "02b96f8e-433c-41cc-afb0-a379384b96e5"
+                        },
+                        {
+                            "type": "Ext.grid.column.Action",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id",
+                                "text": "操作"
+                            },
+                            "name": "MyActionColumn1",
+                            "designerId": "44f2e712-c171-48c5-90f1-653e529f1960",
+                            "cn": [
+                                {
+                                    "type": "actioncolumnitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "resetPassword",
+                                        "icon": "./resources/icons/reset16.png",
+                                        "tooltip": "重置密码"
+                                    },
+                                    "name": "MyActionColumnItem",
+                                    "designerId": "e6d04196-b7dd-47e6-b4bf-8d387dabef4d",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "view",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "item",
+                                                    "e",
+                                                    "record",
+                                                    "row"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid = view;",
+                                                    "var record = grid.getStore().getAt(rowIndex);",
+                                                    "Ext.Msg.confirm('操作确认', '确定要重置该用户的密码吗？', function(btnId, text, opt) {",
+                                                    "    if ('yes'==btnId) {",
+                                                    "        Ext.Ajax.request({",
+                                                    "            url: './resources/data/success.json',",
+                                                    "            params: { id: record.data.id },",
+                                                    "            success: function(response){",
+                                                    "                var text = response.responseText;",
+                                                    "                var obj = Ext.decode(text);",
+                                                    "                Ext.Msg.alert('操作成功', '密码已经重置为 123456 ！');",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "});"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "838d23ce-83cc-499c-99c1-855987cab801"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView1",
+                            "designerId": "4c8a5e3a-784f-4558-968f-e1d39bd7b1e5"
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig3",
+                            "designerId": "3017ace3-a714-4c38-8482-4773b530eb7f"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onUsergridActivate",
+                                "implHandler": [
+                                    "component.getStore().load();"
+                                ],
+                                "name": "activate",
+                                "scope": "me"
+                            },
+                            "name": "onUsergridActivate",
+                            "designerId": "0ae07aae-5ff6-4b50-aa13-29e58b67bdcc"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "itemId": "dataimportform",
+                        "title": "数据导入"
+                    },
+                    "name": "MyForm2",
+                    "designerId": "cf7a77c4-560e-4b1b-ba59-06731d02f692",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig",
+                            "designerId": "33b2b206-a3e5-41a2-b583-3cacf30375e1"
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "container|padding": "0 0 5 0",
+                                "layout": "hbox",
+                                "title": "导入存放地"
+                            },
+                            "name": "MyFieldSet",
+                            "designerId": "df192c19-658b-421b-ad7b-cd7e15ed5120",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.File",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "选择数据文件",
+                                        "layout|flex": 1,
+                                        "name": "locationFile"
+                                    },
+                                    "name": "MyFileUpload2",
+                                    "designerId": "eaf1f39a-a9b6-4bed-b7be-63f4b3518996"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "margin": "0 0 0 8",
+                                        "text": "导入",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton17",
+                                    "designerId": "4e9b44f4-97eb-44e9-aeba-86b4b524f5a8",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "e"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var fp = button.up('form');",
+                                                    "fp.submitDataImportForm();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "52a78829-645a-47f1-98ad-ecc4a3cb3a37"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "container|padding": "0 0 5 0",
+                                "layout": "hbox",
+                                "title": "导入房间号"
+                            },
+                            "name": "MyFieldSet1",
+                            "designerId": "49de3227-4467-4fcc-9112-1e95f309fc6e",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.File",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "选择数据文件",
+                                        "layout|flex": 1,
+                                        "name": "roomFile"
+                                    },
+                                    "name": "MyFileUpload3",
+                                    "designerId": "1e13b061-ad88-42b2-ac17-34a3acb764d4"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "margin": "0 0 0 8",
+                                        "text": "导入",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton17",
+                                    "designerId": "de2f0703-a715-4eea-bbce-1fe4cb30cc4e",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "e"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var fp = button.up('form');",
+                                                    "fp.submitDataImportForm();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "475d7136-6e7d-4b89-bde0-17d8990d140c"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "container|padding": "0 0 5 0",
+                                "layout": "hbox",
+                                "title": "导入科室"
+                            },
+                            "name": "MyFieldSet2",
+                            "designerId": "334c7322-b3de-461a-bc92-0514549c029f",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.File",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "选择数据文件",
+                                        "layout|flex": 1,
+                                        "name": "divisionFile"
+                                    },
+                                    "name": "MyFileUpload4",
+                                    "designerId": "950bacda-c183-4da8-a5fb-c227c99cf753"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "margin": "0 0 0 8",
+                                        "text": "导入",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton17",
+                                    "designerId": "c70b9b9d-d517-4c94-8f44-45b0b9662061",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "e"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var fp = button.up('form');",
+                                                    "fp.submitDataImportForm();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "ad829279-9d86-4ada-860d-75dc48fe90d9"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "container|padding": "0 0 5 0",
+                                "layout": "hbox",
+                                "title": "导入设备"
+                            },
+                            "name": "MyFieldSet3",
+                            "designerId": "10709f99-63dc-49f3-9a7c-d0d44b2e6960",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.File",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "选择数据文件",
+                                        "layout|flex": 1,
+                                        "name": "deviceFile"
+                                    },
+                                    "name": "MyFileUpload",
+                                    "designerId": "17b76fee-c7a6-4432-8bb0-3209ac73980b"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "margin": "0 0 0 8",
+                                        "text": "导入",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton17",
+                                    "designerId": "cf0602e3-20b2-43b6-9e71-5bf12ec83374",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "e"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var fp = button.up('form');",
+                                                    "fp.submitDataImportForm();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "ae183f67-6de3-4ba0-8cb3-04c252ae1272"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "basicfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "submitDataImportForm",
+                                "implHandler": [
+                                    "var fp = this;console.dir(fp);",
+                                    "fp.getForm().submit({",
+                                    "    //clientValidation: true,",
+                                    "    url: './resources/data/success.json',",
+                                    "    //params: {},",
+                                    "    success: function(form, action) {",
+                                    "        Ext.Msg.alert('成功', action.result.msg);",
+                                    "    },",
+                                    "    failure: function(form, action) {",
+                                    "        switch (action.failureType) {",
+                                    "            case Ext.form.action.Action.CLIENT_INVALID:",
+                                    "                Ext.Msg.alert('失败', '请正确填写表单内容！');",
+                                    "                break;",
+                                    "            case Ext.form.action.Action.CONNECT_FAILURE:",
+                                    "                Ext.Msg.alert('失败', '通信错误！');",
+                                    "                break;",
+                                    "            case Ext.form.action.Action.SERVER_INVALID:",
+                                    "               Ext.Msg.alert('失败', action.result.msg);",
+                                    "       }",
+                                    "    }",
+                                    "});"
+                                ]
+                            },
+                            "name": "submitDataImportForm",
+                            "designerId": "81f63449-cbf1-4630-a739-2936d670de4f"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

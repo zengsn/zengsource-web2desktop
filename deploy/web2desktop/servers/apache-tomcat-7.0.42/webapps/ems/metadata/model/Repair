@@ -1,0 +1,210 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Repair"
+    },
+    "name": "Room2",
+    "designerId": "c5826a1b-58e6-4317-94dc-41b387559cca",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField",
+            "designerId": "2c4ef7f7-4608-4e5f-adc7-c6bbe89a6d7a"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deviceId"
+            },
+            "name": "MyField1",
+            "designerId": "fd332c60-013b-4310-9c8f-5bebfa69d228"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deviceName"
+            },
+            "name": "MyField11",
+            "designerId": "b75a5acc-d93d-4a0c-9eb8-c24353631344"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deviceCode"
+            },
+            "name": "MyField17",
+            "designerId": "b6413a4d-eb04-43a0-b84b-c59160c1ad36"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deviceStatus"
+            },
+            "name": "MyField30",
+            "designerId": "de9ec9e2-4676-49c5-b422-c6dc0041d5fc"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "locationId"
+            },
+            "name": "MyField18",
+            "designerId": "f73acc42-404b-4e46-bed1-d894418996a2"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "locationName"
+            },
+            "name": "MyField24",
+            "designerId": "c284aa25-0ace-4bc6-96e4-d5e93b170a45"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "divisionId"
+            },
+            "name": "MyField19",
+            "designerId": "3da85b51-bc33-49b3-bc90-7574b8c80f5a"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "divisionName"
+            },
+            "name": "MyField25",
+            "designerId": "2ab0346a-d0aa-4649-9c79-7350d5eb719c"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "roomId"
+            },
+            "name": "MyField26",
+            "designerId": "07aa2fed-2cc5-44b6-aac9-d97cc8c0910e"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "roomName"
+            },
+            "name": "MyField27",
+            "designerId": "5d5ae1ff-8d71-4127-b318-2a9b8cb469db"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "problem"
+            },
+            "name": "MyField20",
+            "designerId": "fba52f52-6a69-45a0-9a67-3a26066bdd0e"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "measure"
+            },
+            "name": "MyField21",
+            "designerId": "ace47839-e11f-47b2-8f17-44d736e1b072"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "date"
+            },
+            "name": "MyField22",
+            "designerId": "26fe4f19-b4c0-4c37-b4f7-d0ad0a440798"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "operator"
+            },
+            "name": "MyField23",
+            "designerId": "ecb53cba-f458-430a-b548-a61c05f66bcb"
+        }
+    ]
+}

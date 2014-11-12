@@ -1,0 +1,99 @@
+[{
+	"id": "location-1",
+	"text": "手术一区",
+	"expanded": true,
+	"children": [{
+		"id": "room-1",
+		"text": "10房",
+		"expanded": true,
+		"children": [{
+			"id": "device-01",
+			"text": "OPT手术床",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-02",
+			"text": "无影灯",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-03",
+			"text": "MACH无影灯",
+			"status": -1,
+			"icon": "./resources/icons/delete16.png",
+			"leaf": true
+		}]
+	}, {
+		"id": "room-2",
+		"text": "18房",
+		"children": [{
+			"id": "device-11",
+			"text": "OPT手术床",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-12",
+			"text": "无影灯",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-13",
+			"text": "MACH无影灯",
+			"status": -1,
+			"icon": "./resources/icons/delete16.png",
+			"leaf": true
+		}]
+	}]
+}, {
+	"id": "location-2",
+	"text": "手术二区",
+	"children": [{
+		"id": "room-3",
+		"text": "28房",
+		"children": [{
+			"id": "device-21",
+			"text": "OPT手术床",
+			"status": 0,
+			"icon": "./resources/icons/unlock16.png",
+			"leaf": true
+		}, {
+			"id": "device-22",
+			"text": "无影灯",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-23",
+			"text": "MACH无影灯",
+			"status": -1,
+			"icon": "./resources/icons/lockgray16.png",
+			"leaf": true
+		}]
+	}, {
+		"id": "room-4",
+		"text": "48房",
+		"children": [{
+			"id": "device-31",
+			"text": "OPT手术床",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-32",
+			"text": "无影灯",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-33",
+			"text": "MACH无影灯",
+			"status": -1,
+			"icon": "./resources/icons/delete16.png",
+			"leaf": true
+		}]
+	}]
+}]

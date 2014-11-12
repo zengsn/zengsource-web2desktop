@@ -1,0 +1,53 @@
+{
+	"id": "root",
+	"text": "特殊设备",
+	"expanded": true,
+	"children" :[{
+		"id": "division-1",
+		"text": "通用型",
+		"expanded": true,
+		"icon": "./resources/icons/folder16.png",
+		"children": [{
+			"id": "device-51",
+			"text": "NC4显微镜",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-52",
+			"text": "LIBRA X光机",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-53",
+			"text": "NOVA小高压消毒炉",
+			"status": -1,
+			"icon": "./resources/icons/delete16.png",
+			"leaf": true
+		}]
+	}, {
+		"id": "division-2",
+		"text": "神经外科",
+		"icon": "./resources/icons/folder16.png",
+		"children": [{
+			"id": "device-61",
+			"text": "NC4显微镜",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-62",
+			"text": "LIBRA X光机",
+			"status": 0,
+			"icon": "./resources/icons/checkmark16.png",
+			"leaf": true
+		}, {
+			"id": "device-63",
+			"text": "NOVA小高压消毒炉",
+			"status": -1,
+			"icon": "./resources/icons/delete16.png",
+			"leaf": true
+		}]
+	}]
+}

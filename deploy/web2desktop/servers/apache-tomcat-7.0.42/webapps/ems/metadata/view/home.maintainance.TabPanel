@@ -1,0 +1,686 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeTab": 0,
+        "designer|userAlias": "homemaintainancetabpanel",
+        "designer|userClassName": "home.maintainance.TabPanel"
+    },
+    "name": "MyTabPanel1",
+    "designerId": "2d215ab9-abad-4642-806d-7522ca756a5f",
+    "viewControllerInstanceId": "d971fb89-c897-42c2-80ad-5975f425b409",
+    "viewModelInstanceId": "803211d0-933a-4893-b258-ee9fa461468a",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "repairgrid",
+                "store": "Repairs",
+                "title": "维护记录"
+            },
+            "name": "MyGridPanel",
+            "designerId": "862f8766-dbf3-4b51-bc54-76657e15d8b4",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer",
+                    "designerId": "4dce8ad1-6167-4a72-923c-5f4f46c52b84"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "date",
+                        "text": "日期"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "dee98e10-63d0-4a9c-9057-6d27dc42cff6"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "deviceName",
+                        "text": "设备名称"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "2e97f9ca-fb26-4eda-9cfd-62e3ea9a2a78"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "locationName",
+                        "text": "位置"
+                    },
+                    "name": "MyColumn7",
+                    "designerId": "001dfbb7-15e3-4268-9b11-ee5b22bedff4"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "roomId",
+                        "text": "房间",
+                        "width": 64
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "9f09d9af-6792-4fbc-a8b4-2138718a2959"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "problem",
+                        "flex": 1,
+                        "text": "故障现象"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "aba4d8ec-25b3-438c-8625-aa30b0137d14",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "name": "problems"
+                            },
+                            "name": "MyTextField7",
+                            "designerId": "58feb11c-82e7-4b1f-a1f4-e2a3a8f91833"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "measure",
+                        "flex": 1,
+                        "text": "检修情况"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "cd9ddbf6-ccb0-4233-9b53-417117516284",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "name": "measure"
+                            },
+                            "name": "MyTextField8",
+                            "designerId": "e0ace6ff-576d-4d9f-acd8-d115174f823c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "deviceStatus",
+                        "text": "状态",
+                        "width": 64
+                    },
+                    "name": "MyColumn8",
+                    "designerId": "dc5b4338-0bee-46f2-8b31-cf168dd166e4",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "if (value===-1) {",
+                                    "    return '<span style=\"color:red;\">修理中</span>';",
+                                    "} else {",
+                                    "    return '<span style=\"color:gray;\">已恢复</span>';",
+                                    "}"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "c678ace5-9eb9-489e-8f57-250741134ee5"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Action",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "deviceStatus",
+                        "text": "操作"
+                    },
+                    "name": "MyActionColumn",
+                    "designerId": "bacffae0-fd94-46a9-8ce7-f680cffd8104",
+                    "cn": [
+                        {
+                            "type": "actioncolumnitem",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "renew",
+                                "icon": "./resources/icons/left16.png",
+                                "tooltip": "修好恢复"
+                            },
+                            "name": "MyActionColumnItem1",
+                            "designerId": "80291686-eb00-4ee1-8f9b-c9d107211202",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "view",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "item",
+                                            "e",
+                                            "record",
+                                            "row"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = view;",
+                                            "var record = grid.getStore().getAt(rowIndex);",
+                                            "if (record.data.deviceStatus!=-1) {",
+                                            "    Ext.Msg.alert('错误', '该设备已恢复正常使用，不需要再操作！');",
+                                            "    return;",
+                                            "}",
+                                            "Ext.Msg.confirm('操作确认', '确定该设备已经修理到位了吗？', function(btnId, text, opt) {",
+                                            "    if ('yes'==btnId) {",
+                                            "        Ext.Ajax.request({",
+                                            "            url: './resources/data/success.json',",
+                                            "            params: { id: record.data.id },",
+                                            "            success: function(response){",
+                                            "                var text = response.responseText;",
+                                            "                var obj = Ext.decode(text);",
+                                            "                Ext.Msg.alert('操作成功', '设备状态已修改为正常！');",
+                                            "            }",
+                                            "        });",
+                                            "    }",
+                                            "});"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "eb9fd98a-79a0-4da3-a877-5ffd6a83c08b"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView",
+                    "designerId": "8d67e65c-43c6-43b2-bc5e-d7b2d24bf4fc"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onRepairGridRender",
+                        "implHandler": [
+                            "var me = this;",
+                            "component.getStore().load();"
+                        ],
+                        "name": "render",
+                        "scope": "me"
+                    },
+                    "name": "onRepairGridRender",
+                    "designerId": "59e02538-5ea6-4d8f-8f4c-08ba3346b9e1"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onRepairGridSelectionChange",
+                        "implHandler": [
+                            "var me = this;",
+                            "var grid = me.down('#repairgrid');",
+                            "// var bbar = grid.getDockedItems('toolbar[dock=\"bottom\"]')[0];",
+                            "// var button = bbar.down('#renewDeviceBtn');",
+                            "// if (model.getCount()===1) {",
+                            "//     button.enable();",
+                            "// } else {",
+                            "//     button.disable();",
+                            "// }"
+                        ],
+                        "name": "selectionchange",
+                        "scope": "me"
+                    },
+                    "name": "onRepairGridSelectionChange",
+                    "designerId": "9c0547bf-7a94-455c-9ca3-90b4f58960a8"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onRepairGridItemContextMenu",
+                        "implHandler": [
+                            "var me = this;",
+                            "e.preventDefault();",
+                            "var grid = me.down('#repairgrid');",
+                            "if (!grid.itemContextMenu) {",
+                            "    grid.itemContextMenu = Ext.create('widget.homemaintainancecontextmenu');",
+                            "    grid.itemContextMenu.grid = grid;",
+                            "}",
+                            "grid.itemContextMenu.checkStatus(record);",
+                            "grid.itemContextMenu.showAt(e.getXY());"
+                        ],
+                        "name": "itemcontextmenu",
+                        "scope": "me"
+                    },
+                    "name": "onRepairGridItemContextMenu",
+                    "designerId": "b7acb44b-9af9-4a58-acc7-4960ecb5ad05"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "Repairs",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar",
+                    "designerId": "3c3cf793-005b-47e0-8580-7f25602f1799",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Separator",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null
+                            },
+                            "name": "MySeparator2",
+                            "designerId": "c5a09109-2813-4528-ac47-55264edd4763"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "disabled": true,
+                                "hidden": true,
+                                "icon": "./resources/icons/print16.png",
+                                "itemId": "printBtn",
+                                "layout|flex": null,
+                                "text": null
+                            },
+                            "name": "MyButton16",
+                            "designerId": "a2a6e338-172e-4660-ba45-60ea4a6546cb"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "disabled": true,
+                                "hidden": true,
+                                "icon": "./resources/icons/left16.png",
+                                "itemId": "renewDeviceBtn",
+                                "layout|flex": null,
+                                "text": null
+                            },
+                            "name": "MyButton15",
+                            "designerId": "ffa5562d-28eb-4e7d-a43c-3bc1bb8df546"
+                        },
+                        {
+                            "type": "Ext.toolbar.Separator",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null
+                            },
+                            "name": "MySeparator5",
+                            "designerId": "104c8f9c-ed67-4c8c-ae61-0f9cce62d6df"
+                        },
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "仅显示未修好",
+                                "fieldLabel": null,
+                                "inputValue": "-1",
+                                "itemId": "repairingOnly",
+                                "layout|flex": null,
+                                "uncheckedValue": null
+                            },
+                            "name": "MyCheckbox",
+                            "designerId": "ef3ed48f-36b7-4c6e-89a5-e0ad9671dde0",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onRepairingOnlyChange",
+                                        "implHandler": [
+                                            "var me = this;",
+                                            "var grid = me.down('#repairgrid');",
+                                            "if (newValue) {",
+                                            "    grid.getStore().load({status: -1});",
+                                            "} else {",
+                                            "    grid.getStore().load();",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "name": "onRepairingOnlyChange",
+                                    "designerId": "925ef727-da85-41db-808a-bbe924ca8583"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "TabConfig5",
+                    "designerId": "151afaca-2eed-4246-b93a-c1d8ba9ef4bb"
+                },
+                {
+                    "type": "Ext.grid.plugin.RowEditing",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "repairRowEditor",
+                        "pluginId": "repairRowEditor"
+                    },
+                    "name": "MyRowEditingPlugin",
+                    "designerId": "a7a5695a-1c21-4670-822c-6970c7aa9f0d",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onRepairRowEditingEdit",
+                                "implHandler": [
+                                    "var grid = editor.grid;",
+                                    "var record = context.record;",
+                                    "var newValues = context.newValues;//console.dir(newValues);",
+                                    "record.data.problem = newValues.problem;",
+                                    "record.data.measure = newValues.measure;",
+                                    "Ext.Ajax.request({",
+                                    "    url: './resources/data/success.json',",
+                                    "    params: record.data,",
+                                    "    success: function(response){",
+                                    "        var text = response.responseText;",
+                                    "        var obj = Ext.decode(text);",
+                                    "        grid.getStore().load();",
+                                    "    }",
+                                    "});"
+                                ],
+                                "name": "edit",
+                                "scope": "me"
+                            },
+                            "name": "onRepairRowEditingEdit",
+                            "designerId": "1f02fc6e-e628-4eb3-999d-624348bf4ae0"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onRepairRowEditingCanceledit",
+                                "implHandler": [
+                                    "var grid = editor.grid;",
+                                    "grid.getStore().load();"
+                                ],
+                                "name": "canceledit",
+                                "scope": "me"
+                            },
+                            "name": "onRepairRowEditingCanceledit",
+                            "designerId": "a65b6545-2c37-4d79-ba33-978c17afafb9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disabled": true,
+                "itemId": "usagegrid",
+                "store": "Usages",
+                "title": "使用记录"
+            },
+            "name": "MyGridPanel2",
+            "designerId": "99150465-a6a7-4668-9b71-ae043d065aa1",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer1",
+                    "designerId": "2a269cfe-faba-41f7-86b1-79d549494ffa"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "deviceCode",
+                        "text": "设备ID"
+                    },
+                    "name": "MyColumn6",
+                    "designerId": "0ba4ce45-fa04-4730-8102-8e2a2417fb12"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "deviceName",
+                        "text": "设备名"
+                    },
+                    "name": "MyColumn12",
+                    "designerId": "2be15c91-169a-4fba-873e-7371628abda9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "startDate",
+                        "text": "使用时间"
+                    },
+                    "name": "MyColumn9",
+                    "designerId": "49151483-0467-4f3f-be04-c9ff5e8e37a0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "endDate",
+                        "text": "归还时间"
+                    },
+                    "name": "MyColumn10",
+                    "designerId": "609ad8ca-0b9a-463a-9d78-70eaf75a9f99"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "comment",
+                        "flex": 1,
+                        "text": "备注"
+                    },
+                    "name": "MyColumn11",
+                    "designerId": "2a2d2005-9f72-408c-afca-91848702a85e"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView2",
+                    "designerId": "658d3730-13f9-4dc5-a7b8-16ab067be93d"
+                },
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "TabConfig1",
+                    "designerId": "71e33995-ee5c-443f-9188-13c931be18c3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"success": true,
+	"locations": [{
+		"id": 1,
+		"name": "手术一区"	
+	}, {
+		"id": 2,
+		"name": "手术二区"	
+	}, {
+		"id": 3,
+		"name": "手术三区"	
+	}]
+}

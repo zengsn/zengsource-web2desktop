@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Rooms",
+        "model": "Room",
+        "storeId": "Rooms"
+    },
+    "name": "Locations1",
+    "designerId": "615d1cde-06dc-4d00-9319-5f1b092968fa",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "./resources/data/rooms.json"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "8b882be1-f6f0-4e02-b128-983f997ba867",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "rooms"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "efb91a4d-454c-4de0-87d5-55da05e41ebc"
+                }
+            ]
+        }
+    ]
+}

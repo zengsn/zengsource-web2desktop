@@ -1,0 +1,35 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Main"
+        ],
+        "models": [
+            "Usage"
+        ],
+        "name": "DMSApp",
+        "stores": [
+            "Locations",
+            "Rooms",
+            "Divisions",
+            "Usages",
+            "Users"
+        ],
+        "views": [
+            "home.device.Panel",
+            "home.device.EditWindow",
+            "setting.Panel",
+            "home.LogoPanel",
+            "home.user.EditWindow",
+            "home.maintainance.TabPanel",
+            "home.maintainance.ContextMenu"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

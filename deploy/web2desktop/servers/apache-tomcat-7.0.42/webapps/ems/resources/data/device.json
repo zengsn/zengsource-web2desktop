@@ -1,0 +1,11 @@
+{
+	"success": true,
+	"device" : {
+		"id": 1,
+		"code": "NO. 1960",
+		"name": "NC4显微镜",
+		"category": "special",
+		"divisionId": 1,
+		"divisionName": "通用型"
+	}
+}

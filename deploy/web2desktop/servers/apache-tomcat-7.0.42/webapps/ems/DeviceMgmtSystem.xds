@@ -1,0 +1,106 @@
+{
+    "name": "DeviceMgmtSystem",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.0.2.270",
+            "frameworkVersion": "5.0.1"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 1903,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000007,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "444e8eec-eccf-41f6-8f26-bfb7ef8fde00",
+            "cdf0067e-c88e-474f-9e4e-c11f6693043a",
+            "89286db4-8a3f-4062-a990-b235064dcac4",
+            "d7728715-80c7-4e1c-8399-87af8fa57b34",
+            "1a75d2de-0958-4228-82b7-e853d428ee55",
+            "f061f38c-e7da-4c1e-9cc4-06fad387e508",
+            "3c53f51e-8279-460e-abdd-d40ac036f4f2",
+            "7e4272ac-1475-4b56-81e2-cd5c97f29d13",
+            "3c15bf66-fe40-4191-af5e-f686c30729f6",
+            "ed29dbba-d65c-4878-879c-aaf52975b62b",
+            "6784aa25-15b0-4f6f-84c3-4705a0c2ea80",
+            "c4d72eb9-52fc-4ac5-b2e3-e6eb38f1eead",
+            "c509ae62-e5dc-446a-8d44-caf06a46800e",
+            "902c64f2-2ecd-4878-a100-253b44ba86e2",
+            "3497c4c6-5b04-4d75-8a4d-27eb661385b7",
+            "90107aec-8a53-4a81-af51-0dd7e155c134",
+            "a01d7838-9e0c-4250-9a5b-501c4daa76e1",
+            "025ce336-aba7-4c02-9983-4da2a3766f35",
+            "65d30463-9554-4250-b3c1-9cad18c5969b",
+            "dd2b5478-5e18-4369-adf5-4a1e088311ee",
+            "873f38b9-8027-4214-bfd4-b9019d0902a8",
+            "418783a2-133b-46e9-bb02-e797e1deb681",
+            "ed41f97e-bfdb-475c-a48b-4631cf89e8ec",
+            "c8b4063e-7618-4f00-a85c-c1408ac12037",
+            "cd237ba7-11bc-43f6-a958-79ff76026ddc",
+            "590c76da-0189-4ec2-9d70-fd782949dbcd",
+            "23bfb04b-64ed-4bf0-b6ef-209d4ba3be80",
+            "193dc501-5012-4c6c-aa91-a0481fa30e72",
+            "65129679-8767-4e86-99c7-003cad4e9657",
+            "7939191e-320b-4221-9c68-d60e6f417609",
+            "be0cfeb7-aaab-4e20-ae49-bf3375fb470e",
+            "c2adb4dd-3f1d-4af9-bf5a-175f41e4c8c1",
+            "72c55d68-41bd-4f13-9e6e-01acec76d7dd",
+            "2d215ab9-abad-4642-806d-7522ca756a5f",
+            "803211d0-933a-4893-b258-ee9fa461468a",
+            "d971fb89-c897-42c2-80ad-5975f425b409"
+        ],
+        "store": [
+            "5d90cc62-474d-4fe8-b961-597f69e248e5",
+            "65ea812a-aa35-4333-9f0e-2cd7ec0cf568",
+            "b28673e7-164a-403a-beb0-802b529b38ee",
+            "f5d9de68-d3c5-4f24-85f2-684df35ae7f7",
+            "e1a26001-e0f3-4c92-ab34-1cc762254f90",
+            "615d1cde-06dc-4d00-9319-5f1b092968fa",
+            "ffd09ec6-e562-471f-a8bb-53263b3477a4"
+        ],
+        "controller": [
+            "929dffde-b3ff-4afb-b6b8-3f3a323c8552"
+        ],
+        "model": [
+            "aa977b5a-d5f2-479e-a97f-1c911349c611",
+            "bc08c21e-c882-4b0e-a44a-60a3acd37bf5",
+            "6f151d27-fee7-4d87-b406-6d6a5f42707b",
+            "6253ffc5-a8d1-49f7-a5eb-9700b8e1a567",
+            "9e0900ca-3f43-4a11-bed0-c98dbe78f50e",
+            "c5826a1b-58e6-4317-94dc-41b387559cca",
+            "93b29c8c-2aad-44ba-8562-d182cbb886ca",
+            "0ad23aa2-c050-43b6-9ce9-92b8aa2dce72"
+        ],
+        "resource": [
+            "bb57c4d3-256c-4173-a75e-3e064a0925d2",
+            "4878203d-35ea-47ee-9653-07b934356594"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
